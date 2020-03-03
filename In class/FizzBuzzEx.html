@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<meta charset="qtf-8">
+<html lang = "en">
+    <head>
+        <title>Homework 5 - Learn Javascript (2/13)</title>
+    <script>
+        function fizzBuzz(){
+            const target = document.getElementById('outputDiv'); //DOM manipulation
+            let output = ''; //output is nothing at the start
+
+            target.innerHTML = ''; //clear the field before starting
+
+            for (let i = 1; i <= 100; i++){
+                if ((i % 3 == 0) && (i % 5 == 0)){
+                    output = 'Fizzbuzz';
+                }
+                if (i % 3 == 0){
+                    output = 'Fizz';
+                }else if(i % 5 == 0){
+                    output = 'Buzz';
+                }else{
+                    output = i;S
+                }
+
+                target.innerHTML += output + '<br>';
+            }
+        }
+    </script>
+    </head> 
+    
+    <body>
+        <h3>Fizzbuzz</h3>
+        <button onclick="fizzbuzz()">Run it </button> 
+        <div id="outputDiv">
+    </body>
+</html>
